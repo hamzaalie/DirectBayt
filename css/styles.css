@@ -2573,7 +2573,7 @@ label {
   align-items: center;
 }
 .flat-slider.home-1 .overlay {
-  background: linear-gradient(to right, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.80) 35%, rgba(255,255,255,0.30) 60%, rgba(255,255,255,0) 80%);
+  background: linear-gradient(to right, #ffffff 0%, #ffffff 40%, rgba(255,255,255,0.6) 58%, rgba(255,255,255,0) 75%);
   opacity: 1;
 }
 .flat-slider.home-1 > .container {
