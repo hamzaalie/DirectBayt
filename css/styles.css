@@ -2566,20 +2566,20 @@ label {
 }
 .flat-slider.home-1 {
   background-image: url(../images/slider/hero-dubai.jpg);
-  background-position: center center;
+  background-position: center right;
   background-size: cover;
   min-height: 560px;
   display: flex;
   align-items: center;
 }
 .flat-slider.home-1 .overlay {
-  background: linear-gradient(to right, rgba(255,255,255,0.88) 0%, rgba(255,255,255,0.65) 45%, rgba(255,255,255,0.05) 75%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.80) 35%, rgba(255,255,255,0.30) 60%, rgba(255,255,255,0) 80%);
   opacity: 1;
 }
 .flat-slider.home-1 > .container {
   width: 100%;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   padding-top: 100px;
   padding-bottom: 100px;
 }
