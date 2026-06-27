@@ -2565,38 +2565,46 @@ label {
   z-index: 123;
 }
 .flat-slider.home-1 {
-  background-image: url(../images/slider/slider-1.jpg);
+  background-image: url(../images/slider/hero-dubai.jpg);
+  background-position: center right;
 }
 .flat-slider.home-1 .overlay {
-  background: #161e2d;
-  opacity: 0.3;
+  background: linear-gradient(to right, rgba(255,255,255,0.82) 0%, rgba(255,255,255,0.55) 45%, rgba(255,255,255,0) 70%);
+  opacity: 1;
 }
 .flat-slider.home-1 .slider-content {
   position: relative;
   z-index: 1;
-  padding: 155px 0px 246px;
+  padding: 140px 0px 180px;
 }
 .flat-slider.home-1 .slider-content .heading {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 .flat-slider.home-1 .slider-content .subtitle {
-  margin-top: 20px;
-  padding: 0px 330px;
+  margin-top: 16px;
+  padding: 0;
+}
+.text-dark-custom {
+  color: #161e2d !important;
 }
 .flat-slider.home-1 .hero-btn-wrap .tf-btn.primary {
-  background-color: #1563df;
+  background-color: #161e2d;
   color: #ffffff;
+  border-color: #161e2d;
+}
+.flat-slider.home-1 .hero-btn-wrap .tf-btn.primary:hover {
+  background-color: #1563df;
   border-color: #1563df;
 }
-.flat-slider.home-1 .hero-btn-wrap .tf-btn.btn-line {
+.flat-slider.home-1 .hero-btn-wrap .hero-outline-btn {
   background-color: transparent;
-  border-color: #ffffff;
-  color: #ffffff;
+  border-color: #161e2d;
+  color: #161e2d;
 }
-.flat-slider.home-1 .hero-btn-wrap .tf-btn.btn-line:hover {
-  background-color: #ffffff;
-  border-color: #ffffff;
-  color: #1563df;
+.flat-slider.home-1 .hero-btn-wrap .hero-outline-btn:hover {
+  background-color: #161e2d;
+  border-color: #161e2d;
+  color: #ffffff;
 }
 .flat-slider .overlay {
   content: "";
