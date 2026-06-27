@@ -2583,6 +2583,21 @@ label {
   margin-top: 20px;
   padding: 0px 330px;
 }
+.flat-slider.home-1 .hero-btn-wrap .tf-btn.primary {
+  background-color: #1563df;
+  color: #ffffff;
+  border-color: #1563df;
+}
+.flat-slider.home-1 .hero-btn-wrap .tf-btn.btn-line {
+  background-color: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+.flat-slider.home-1 .hero-btn-wrap .tf-btn.btn-line:hover {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #1563df;
+}
 .flat-slider .overlay {
   content: "";
   position: absolute;
