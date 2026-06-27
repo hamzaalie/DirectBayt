@@ -2568,28 +2568,39 @@ label {
   background-image: url(../images/slider/hero-dubai.jpg);
   background-position: center center;
   background-size: cover;
+  min-height: 560px;
+  display: flex;
+  align-items: center;
 }
 .flat-slider.home-1 .overlay {
-  background: linear-gradient(to right, rgba(255,255,255,0.90) 0%, rgba(255,255,255,0.70) 40%, rgba(255,255,255,0.10) 70%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,0.88) 0%, rgba(255,255,255,0.65) 45%, rgba(255,255,255,0.05) 75%, rgba(255,255,255,0) 100%);
   opacity: 1;
+}
+.flat-slider.home-1 > .container {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .flat-slider.home-1 .slider-content {
   position: relative;
-  z-index: 1;
-  padding: 120px 0px 120px;
 }
-.flat-slider.home-1 .slider-content .heading {
-  margin-bottom: 24px;
+.flat-slider.home-1 .slider-content .title-large {
+  margin: 0 0 14px 0;
+  line-height: 1.05;
 }
-.flat-slider.home-1 .slider-content .subtitle {
-  margin-top: 12px;
-  padding: 0;
+.flat-slider.home-1 .slider-content .hero-subtitle {
+  margin: 0 0 28px 0;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #333333;
 }
 .text-dark-custom {
   color: #000000 !important;
 }
 .flat-slider.home-1 .hero-btn-wrap {
-  margin-top: 20px;
+  margin-top: 0;
 }
 .flat-slider.home-1 .hero-btn-wrap .tf-btn.primary {
   background-color: #1563df;
