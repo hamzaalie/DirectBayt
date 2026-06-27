@@ -2566,44 +2566,52 @@ label {
 }
 .flat-slider.home-1 {
   background-image: url(../images/slider/hero-dubai.jpg);
-  background-position: center right;
+  background-position: center center;
+  background-size: cover;
 }
 .flat-slider.home-1 .overlay {
-  background: linear-gradient(to right, rgba(255,255,255,0.82) 0%, rgba(255,255,255,0.55) 45%, rgba(255,255,255,0) 70%);
+  background: linear-gradient(to right, rgba(255,255,255,0.90) 0%, rgba(255,255,255,0.70) 40%, rgba(255,255,255,0.10) 70%, rgba(255,255,255,0) 100%);
   opacity: 1;
 }
 .flat-slider.home-1 .slider-content {
   position: relative;
   z-index: 1;
-  padding: 140px 0px 180px;
+  padding: 120px 0px 120px;
 }
 .flat-slider.home-1 .slider-content .heading {
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 .flat-slider.home-1 .slider-content .subtitle {
-  margin-top: 16px;
+  margin-top: 12px;
   padding: 0;
 }
 .text-dark-custom {
-  color: #161e2d !important;
+  color: #000000 !important;
+}
+.flat-slider.home-1 .hero-btn-wrap {
+  margin-top: 36px;
 }
 .flat-slider.home-1 .hero-btn-wrap .tf-btn.primary {
-  background-color: #161e2d;
+  background-color: #1563df;
   color: #ffffff;
-  border-color: #161e2d;
+  border-color: #1563df;
+  border-radius: 50px;
+  padding: 14px 32px;
 }
 .flat-slider.home-1 .hero-btn-wrap .tf-btn.primary:hover {
-  background-color: #1563df;
-  border-color: #1563df;
+  background-color: #0d4fb8;
+  border-color: #0d4fb8;
 }
 .flat-slider.home-1 .hero-btn-wrap .hero-outline-btn {
   background-color: transparent;
-  border-color: #161e2d;
-  color: #161e2d;
+  border-color: #1563df;
+  color: #1563df;
+  border-radius: 50px;
+  padding: 14px 32px;
 }
 .flat-slider.home-1 .hero-btn-wrap .hero-outline-btn:hover {
-  background-color: #161e2d;
-  border-color: #161e2d;
+  background-color: #1563df;
+  border-color: #1563df;
   color: #ffffff;
 }
 .flat-slider .overlay {
