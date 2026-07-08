@@ -2628,33 +2628,18 @@ label {
 .about-value-card {
   border-radius: 16px;
   overflow: hidden;
-  background: #fff;
-  border: 1px solid #ebebeb;
-  text-align: center;
-  padding-bottom: 24px;
   height: 100%;
   transition: box-shadow 0.25s;
 }
 .about-value-card:hover {
-  box-shadow: 0 8px 32px rgba(17,24,34,0.10);
+  box-shadow: 0 8px 32px rgba(17,24,34,0.15);
 }
 .about-value-card img {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   display: block;
-}
-.about-value-card h6 {
-  font-size: 16px;
-  font-weight: 700;
-  color: #111822;
-  margin: 18px 16px 8px;
-}
-.about-value-card p {
-  font-size: 14px;
-  color: #666;
-  margin: 0 16px;
-  line-height: 1.6;
+  border-radius: 16px;
 }
 .flat-slider .overlay {
   content: "";
