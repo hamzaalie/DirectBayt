@@ -145,40 +145,84 @@
         Whether you are a property owner seeking greater exposure and faster connections, or a buyer looking for smarter search tools and direct communication, our platform is designed to make every step of your property journey faster, smarter, and more rewarding.
     </p>
 </div>
-                    <div class="tf-grid-layout md-col-3 wow fadeInUpSmall" data-wow-delay=".4s" data-wow-duration="2000ms">
-                        <div class="box-service">
-                            <div class="image">
-                                <img class="lazyload" data-src="images/service/home-1.png" src="images/service/home-1.png" alt="image-location">
-                            </div>
-                            <div class="content">
-                                <h5 class="title">For Property Owners</h5>
-                                <p class="description">Greater exposure, transparent pricing, better visibility and faster connections with genuine buyers and investors.</p>
-                                <a href="add-property.html" class="tf-btn btn-line">List Your Property <span class="icon icon-arrow-right2"></span></a>
-                            </div>
+                                        <!-- Tabbed Service Carousel -->
+                    <style>
+                    .db-tab-nav-wrap{display:flex;justify-content:center;margin-bottom:36px;}
+                    .db-tab-nav{display:inline-flex;border:0.8px solid rgba(17,24,34,0.12);border-radius:9999px;padding:6px;gap:4px;background:#fff;}
+                    .db-tab-btn{background:transparent;border:none;border-radius:9999px;padding:13px 26px;font-size:14px;font-weight:500;cursor:pointer;color:#5c6368;transition:background 0.3s,color 0.3s;font-family:inherit;white-space:nowrap;}
+                    .db-tab-btn.active{background:#111822;color:#fff;}
+                    .db-tab-panel{display:none;animation:dbFadeIn 0.3s ease;}
+                    .db-tab-panel.active{display:flex;}
+                    @keyframes dbFadeIn{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}
+                    .db-tab-inner{display:flex;align-items:stretch;gap:0;background:#f4f6f9;border-radius:12px;overflow:hidden;min-height:460px;width:100%;}
+                    .db-tab-content{flex:1;max-width:48%;padding:56px 52px;display:flex;flex-direction:column;justify-content:center;}
+                    .db-tab-eyebrow{color:#6a7f7f;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:20px;}
+                    .db-tab-heading{font-size:34px;font-weight:700;line-height:1.15;letter-spacing:-0.5px;color:#111822;margin-bottom:20px;}
+                    .db-tab-desc{font-size:16px;line-height:1.7;color:#5c6368;margin-bottom:36px;}
+                    .db-tab-cta{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;color:#111822;text-decoration:none;border-bottom:1.5px solid #111822;padding-bottom:2px;width:fit-content;}
+                    .db-tab-cta:hover{opacity:0.65;}
+                    .db-tab-img-wrap{flex:1;max-width:52%;min-height:460px;}
+                    .db-tab-img-wrap img{width:100%;height:100%;object-fit:cover;display:block;}
+                    @media(max-width:767px){.db-tab-inner{flex-direction:column;}.db-tab-content{max-width:100%;padding:32px 24px;}.db-tab-img-wrap{max-width:100%;min-height:240px;width:100%;}.db-tab-btn{padding:10px 14px;font-size:13px;}}
+                    </style>
+
+                    <div class="db-tab-nav-wrap">
+                        <div class="db-tab-nav">
+                            <button class="db-tab-btn active" onclick="dbSwitchTab(0)">For Property Owners</button>
+                            <button class="db-tab-btn" onclick="dbSwitchTab(1)">For Buyers</button>
+                            <button class="db-tab-btn" onclick="dbSwitchTab(2)">Technology</button>
                         </div>
-                        <div class="box-service">
-                            <div class="image">
-                                <img class="lazyload" data-src="images/service/home-2.png" src="images/service/home-2.png" alt="image-location">
+                    </div>
+
+                    <div class="db-tab-panel active" id="db-panel-0">
+                        <div class="db-tab-inner">
+                            <div class="db-tab-content">
+                                <div class="db-tab-eyebrow">Property Owners</div>
+                                <h3 class="db-tab-heading">Sell smarter.<br>Save on commission.</h3>
+                                <p class="db-tab-desc">List your property directly to verified buyers — no middlemen, no inflated fees. Greater exposure, transparent pricing, and faster closings with one flat fee instead of a percentage commission.</p>
+                                <a href="add-property.html" class="db-tab-cta">List Your Property &rarr;</a>
                             </div>
-                            <div class="content">
-                                <h5 class="title">For Buyers</h5>
-                                <p class="description">Quality listings, smarter search tools, direct communication and informed decisions — all in one platform.</p>
-                                <a href="sidebar-grid.html" class="tf-btn btn-line">Browse Properties <span class="icon icon-arrow-right2"></span></a>
-                            </div>
-                        </div>
-                        <div class="box-service">
-                            <div class="image">
-                                <img class="lazyload" data-src="images/service/home-3.png" src="images/service/home-3.png" alt="image-location">
-                            </div>
-                            <div class="content">
-                                <h5 class="title">Technology That Works for You</h5>
-                                <p class="description">Direct Bayt combines real estate expertise with modern technology to create a faster, smarter and more transparent property experience.</p>
-                                <a href="contact.html" class="tf-btn btn-line">Get in Touch <span class="icon icon-arrow-right2"></span></a>
+                            <div class="db-tab-img-wrap">
+                                <img src="images/2.jpeg" alt="For Property Owners">
                             </div>
                         </div>
                     </div>
-                     
-                </div>
+
+                    <div class="db-tab-panel" id="db-panel-1">
+                        <div class="db-tab-inner">
+                            <div class="db-tab-content">
+                                <div class="db-tab-eyebrow">Property Buyers</div>
+                                <h3 class="db-tab-heading">Find your ideal property, direct.</h3>
+                                <p class="db-tab-desc">Browse verified listings with real pricing. Communicate directly with owners, skip the broker markup, and make informed decisions — all in one platform built for serious buyers.</p>
+                                <a href="sidebar-grid.html" class="db-tab-cta">Browse Properties &rarr;</a>
+                            </div>
+                            <div class="db-tab-img-wrap">
+                                <img src="images/3.jpeg" alt="For Buyers">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="db-tab-panel" id="db-panel-2">
+                        <div class="db-tab-inner">
+                            <div class="db-tab-content">
+                                <div class="db-tab-eyebrow">Smarter Tools</div>
+                                <h3 class="db-tab-heading">Technology built for real estate.</h3>
+                                <p class="db-tab-desc">Direct Bayt combines deep market knowledge with cutting-edge tools — smart search filters, instant owner communication, and verified listing badges — to make every transaction faster and more transparent.</p>
+                                <a href="contact.html" class="db-tab-cta">Get in Touch &rarr;</a>
+                            </div>
+                            <div class="db-tab-img-wrap">
+                                <img src="images/service-buyers.jpeg" alt="Technology">
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                    function dbSwitchTab(index){
+                        document.querySelectorAll('.db-tab-btn').forEach(function(b,i){b.classList.toggle('active',i===index);});
+                        document.querySelectorAll('.db-tab-panel').forEach(function(p,i){p.classList.toggle('active',i===index);});
+                    }
+                    </script>
+                                </div>
             </section>
             <!-- End Service -->
             <!-- partner -->
