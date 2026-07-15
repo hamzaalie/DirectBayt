@@ -157,43 +157,129 @@
             <!-- End Slider -->
 
             <!-- Service  -->
-            <section class="flat-section">
+                        <section class="flat-section">
                 <div class="container">
                     <div class="box-title text-center wow fadeInUp">
-                                                <h3 class="mt-4 title">How It Works</h3>
+                        <h3 class="mt-4 title">How It Works</h3>
                     </div>
-                    <div class="tf-grid-layout md-col-3 wow fadeInUp" data-wow-delay=".2s">
-                        <div class="box-service">
-                            <div class="image">
-                                <img class="lazyload" data-src="images/2.jpeg" src="images/2.jpeg" alt="For Sellers">
-                            </div>
-                            <div class="content">
-                                <h5 class="title">For Sellers</h5>
-                                <p class="description">List your property, choose a package and reach the active buyers registered on our website.</p>
-                                <a href="add-property.html" class="tf-btn btn-line">Get Started <span class="icon icon-arrow-right2"></span></a>
-                            </div>
-                        </div>
-                        <div class="box-service">
-                            <div class="image">
-                                <img class="lazyload" data-src="images/service-buyers.jpeg" src="images/service-buyers.jpeg" alt="For Buyers">
-                            </div>
-                            <div class="content">
-                                <h5 class="title">For Buyers</h5>
-                                <p class="description">Search verified listings, compare options and connect with the right property owner.</p>
-                                <a href="sidebar-grid.html" class="tf-btn btn-line">Browse Properties <span class="icon icon-arrow-right2"></span></a>
-                            </div>
-                        </div>
-                        <div class="box-service">
-                            <div class="image">
-                                <img class="lazyload" data-src="images/3.jpeg" src="images/3.jpeg" alt="For Investors">
-                            </div>
-                            <div class="content">
-                                <h5 class="title">For Investors</h5>
-                                <p class="description">Access quality properties and market opportunities through a trusted platform.</p>
-                                <a href="sidebar-grid.html" class="tf-btn btn-line">Explore Now <span class="icon icon-arrow-right2"></span></a>
-                            </div>
+
+                    <style>
+                    .hiw-tab-nav-wrap{display:flex;justify-content:center;margin-bottom:36px;}
+                    .hiw-tab-nav{display:inline-flex;border:0.8px solid rgba(17,24,34,0.12);border-radius:9999px;padding:6px;gap:4px;background:#fff;}
+                    .hiw-tab-btn{background:transparent;border:none;border-radius:9999px;padding:13px 26px;font-size:14px;font-weight:500;cursor:pointer;color:#5c6368;transition:background 0.3s,color 0.3s;font-family:inherit;white-space:nowrap;}
+                    .hiw-tab-btn.active{background:#111822;color:#fff;}
+                    .hiw-tab-panel{display:none;animation:hiwFade 0.3s ease;}
+                    .hiw-tab-panel.active{display:flex;}
+                    @keyframes hiwFade{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}
+                    .hiw-tab-inner{display:flex;align-items:stretch;background:#f4f6f9;border-radius:12px;overflow:hidden;min-height:460px;width:100%;}
+                    .hiw-tab-content{flex:1;max-width:48%;padding:56px 52px;display:flex;flex-direction:column;justify-content:center;}
+                    .hiw-tab-eyebrow{color:#6a7f7f;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:20px;}
+                    .hiw-tab-heading{font-size:34px;font-weight:700;line-height:1.15;letter-spacing:-0.5px;color:#111822;margin-bottom:20px;}
+                    .hiw-feature-list{list-style:none;padding:0;margin:0 0 32px;display:flex;flex-direction:column;gap:20px;}
+                    .hiw-feature-title{font-weight:700;font-size:15px;color:#111822;margin-bottom:4px;}
+                    .hiw-feature-desc{font-size:14px;line-height:1.65;color:#5c6368;margin:0;}
+                    .hiw-tab-cta{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;color:#111822;text-decoration:none;border-bottom:1.5px solid #111822;padding-bottom:2px;width:fit-content;}
+                    .hiw-tab-cta:hover{opacity:0.65;}
+                    .hiw-tab-img-wrap{flex:1;max-width:52%;min-height:460px;}
+                    .hiw-tab-img-wrap img{width:100%;height:100%;object-fit:cover;display:block;}
+                    @media(max-width:767px){.hiw-tab-inner{flex-direction:column;}.hiw-tab-content{max-width:100%;padding:32px 24px;}.hiw-tab-img-wrap{max-width:100%;min-height:240px;width:100%;}.hiw-tab-btn{padding:10px 14px;font-size:13px;}}
+                    </style>
+
+                    <div class="hiw-tab-nav-wrap">
+                        <div class="hiw-tab-nav">
+                            <button class="hiw-tab-btn active" onclick="hiwTab(0)">For Sellers</button>
+                            <button class="hiw-tab-btn" onclick="hiwTab(1)">For Buyers</button>
+                            <button class="hiw-tab-btn" onclick="hiwTab(2)">For Investors</button>
                         </div>
                     </div>
+
+                    <div class="hiw-tab-panel active" id="hiw-panel-0">
+                        <div class="hiw-tab-inner">
+                            <div class="hiw-tab-content">
+                                <div class="hiw-tab-eyebrow">For Sellers</div>
+                                <h3 class="hiw-tab-heading">Maximize Your Property&rsquo;s Reach, Minimize the Wait.</h3>
+                                <ul class="hiw-feature-list">
+                                    <li>
+                                        <div class="hiw-feature-title">Greater Exposure</div>
+                                        <p class="hiw-feature-desc">Stop waiting for leads. Your property gets front-row visibility to a curated network of active buyers and serious investors, not just casual browsers.</p>
+                                    </li>
+                                    <li>
+                                        <div class="hiw-feature-title">Transparent Pricing</div>
+                                        <p class="hiw-feature-desc">No hidden fees or complex commission structures. We give you full clarity on every step of the listing process.</p>
+                                    </li>
+                                    <li>
+                                        <div class="hiw-feature-title">Faster Connections</div>
+                                        <p class="hiw-feature-desc">Connect directly with vetted, genuine prospects and move from &ldquo;listed&rdquo; to &ldquo;sold&rdquo; or &ldquo;rented&rdquo; at your pace.</p>
+                                    </li>
+                                </ul>
+                                <a href="add-property.html" class="hiw-tab-cta">Get Started &rarr;</a>
+                            </div>
+                            <div class="hiw-tab-img-wrap">
+                                <img src="images/2.jpeg" alt="For Sellers">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hiw-tab-panel" id="hiw-panel-1">
+                        <div class="hiw-tab-inner">
+                            <div class="hiw-tab-content">
+                                <div class="hiw-tab-eyebrow">For Buyers</div>
+                                <h3 class="hiw-tab-heading">The Right Property, Without the Noise.</h3>
+                                <ul class="hiw-feature-list">
+                                    <li>
+                                        <div class="hiw-feature-title">Quality Listings</div>
+                                        <p class="hiw-feature-desc">Every property on our platform is reviewed, ensuring you see accurate, high-quality opportunities that meet your criteria.</p>
+                                    </li>
+                                    <li>
+                                        <div class="hiw-feature-title">Smarter Search Tools</div>
+                                        <p class="hiw-feature-desc">Use our advanced filters to pinpoint exactly what you&rsquo;re looking for &mdash; from neighbourhood amenities to ROI potential &mdash; without wasting time on irrelevant options.</p>
+                                    </li>
+                                    <li>
+                                        <div class="hiw-feature-title">Direct Communication</div>
+                                        <p class="hiw-feature-desc">Engage directly with owners and vetted professionals. No gatekeepers, just clear information to help you make your next move with confidence.</p>
+                                    </li>
+                                </ul>
+                                <a href="sidebar-grid.html" class="hiw-tab-cta">Browse Properties &rarr;</a>
+                            </div>
+                            <div class="hiw-tab-img-wrap">
+                                <img src="images/service-buyers.jpeg" alt="For Buyers">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hiw-tab-panel" id="hiw-panel-2">
+                        <div class="hiw-tab-inner">
+                            <div class="hiw-tab-content">
+                                <div class="hiw-tab-eyebrow">For Investors</div>
+                                <h3 class="hiw-tab-heading">Smart Decisions. Stronger Returns.</h3>
+                                <ul class="hiw-feature-list">
+                                    <li>
+                                        <div class="hiw-feature-title">Curated Opportunities</div>
+                                        <p class="hiw-feature-desc">Access a hand-picked selection of quality properties with strong investment potential across the UAE market.</p>
+                                    </li>
+                                    <li>
+                                        <div class="hiw-feature-title">Market Transparency</div>
+                                        <p class="hiw-feature-desc">Get the data and insights you need to evaluate ROI with confidence &mdash; no guesswork, no inflated valuations.</p>
+                                    </li>
+                                    <li>
+                                        <div class="hiw-feature-title">Direct Access</div>
+                                        <p class="hiw-feature-desc">Connect directly with verified owners and bypass unnecessary intermediaries to close faster and at better terms.</p>
+                                    </li>
+                                </ul>
+                                <a href="sidebar-grid.html" class="hiw-tab-cta">Explore Now &rarr;</a>
+                            </div>
+                            <div class="hiw-tab-img-wrap">
+                                <img src="images/3.jpeg" alt="For Investors">
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                    function hiwTab(index){
+                        document.querySelectorAll('.hiw-tab-btn').forEach(function(b,i){b.classList.toggle('active',i===index);});
+                        document.querySelectorAll('.hiw-tab-panel').forEach(function(p,i){p.classList.toggle('active',i===index);});
+                    }
+                    </script>
                      
                 </div>
             </section>
